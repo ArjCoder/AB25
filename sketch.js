@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup(){
-    var canvas = createCanvas(1200,400);
+    var canvas = createCanvas(1600,400);
     engine = Engine.create();
     world = engine.world;
 
@@ -39,7 +39,7 @@ function setup(){
 }
 
 function draw(){
-    background(backgroundImg);
+    background(0);
     Engine.update(engine);
     console.log(box2.body.position.x);
     console.log(box2.body.position.y);
